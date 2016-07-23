@@ -70,6 +70,8 @@ Description: This tag provides a short description of the page. In some situatio
 - [A Guide to Sharing for Webmasters - Facebook](https://developers.facebook.com/docs/sharing/webmasters)
 
 ### Twitter Cards
+>With Twitter Cards, you can attach rich photos, videos and media experience to Tweets that drive traffic to your website. Simply add a few lines of HTML to your webpage, and users who Tweet links to your content will have a “Card” added to the Tweet that’s visible to all of their followers.
+
 >When the Twitter card processor looks for tags on your page, it first checks for the Twitter property, and if not present, falls back to the supported Open Graph property.
 
 The below meta tags are the bare minimum and there are also lots of different style cards. See their documentation for more information. 
@@ -102,7 +104,7 @@ Twitter fallbacks these tags:
 
 ```html
 <!-- For IE 10 and below -->  
-<!--  No link, just place a file called favicon.co in the root directory -->
+<!--  No link, just place a file called favicon.ico in the root directory -->
 
 <!-- For IE 11, Chrome, Firefox, Safari, Opera -->  
 <link rel="icon" href="path/to/favicon-16.png" sizes="16x16" type="image/png">  
