@@ -39,7 +39,7 @@ Tells the browser to set the website width in px, to the devices width.
 ## Title & Description
 Title: Displays your title in the browser window, history, bookmarks. Shows in search engines and should reflect as your entire site and the page you're on. 
 
-Description: This tag provides a short description of the page. In some situations, this description is used as a part of the snippet shown in the search results. Recommended usage is between 150 and 160 characters.
+Description: This tag provides a short description of the page. In some situations, this description is used as a part of the snippet shown in the search results. Recommended usage is between 150 and 160 characters. It's also worth noting that you should make use of keywords. 
 
 ```html
 <title> Document title goes here </title>
@@ -49,6 +49,19 @@ Description: This tag provides a short description of the page. In some situatio
 
 - [Meta tags that Google understands](https://support.google.com/webmasters/answer/79812?hl=en)
 
+
+## Robots Meta
+>The robots meta tag lets you utilize a granular, page-specific approach to controlling how an individual page should be indexed and served to users in search results.
+
+>After the robots.txt file (or the absence of one) has given permission to crawl a page, by default pages are treated as crawlable, indexable, archivable, and their content is approved for use in snippets that show up in the search results, unless permission is specifically denied in a robots meta tag
+
+I'd recommend using a robots.txt file, as then you don't have to include the meta tags in every page but as Google says, if you want to deny a single page from being indexed then the robots meta tag is the way to go. Ask, Google, Bing, and Yahoo all respect the below code. 
+
+```html
+<!-- Do not show this page or Cached link search results and don't follow the links on this page -->
+<meta name="robots" content="noindex, nofollow">
+```
+- [Robots meta tag specifications](https://developers.google.com/webmasters/control-crawl-index/docs/robots_meta_tag)
 
 ## Facebook / OpenGraph and Twitter Cards
 
