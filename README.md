@@ -114,6 +114,11 @@ Twitter fallbacks these tags:
 
 #Favicons
 
+**I strongly recommend using this website to generate your favicons instead of the below code. They generate around 5 lines of code while still maintaining full browser support. Microsoft, Android, iOS, even the new Safari pinned tabs. They also include ridiculously thorough settings, and you can even set a dedicated image for each device - check it out.**
+
+[Real Favicon Generator](https://realfavicongenerator.net/)
+
+---
 
 ```html
 <!-- For IE 10 and below -->  
