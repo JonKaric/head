@@ -132,8 +132,10 @@ Put the code that was generated in your head tag.
 </style>
 ````
 Then you can either:
-1) Then place your stylesheets at the bottom of your page, before the closing </body> tag.
-2) Load them asynchronously using [loadCSS](https://github.com/filamentgroup/loadCSS) before the closing body tag. (Recommended)
+
+1. Then place your stylesheets at the bottom of your page, before the closing </body> tag.
+
+2. Load them asynchronously using [loadCSS](https://github.com/filamentgroup/loadCSS) before the closing body tag. (Recommended)
 
 For an even better SCSS method and information visit [Ben Edwards' CSS-TRICKS article](https://css-tricks.com/authoring-critical-fold-css/)
 
