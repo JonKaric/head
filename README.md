@@ -121,7 +121,7 @@ Twitter fallbacks these tags:
 
 ## Avoid render blocking CSS
 
-When a webpage comes across an external stylesheet, it must load these resources before rendering any content to the page.Google advises that you put critical CSS (all CSS that is in the (usually) first 1100px of a webpage) as inline CSS placed in the head element. None of these techniques are pretty, and they make your job as a developer hard. There are some positives, though; Google likes faster websites meaning yours will rank higher, and faster load times = better user experience.
+When a webpage comes across an external stylesheet, it must load these resources before rendering any content to the page. Google advises that you put critical CSS (all CSS that is in the (usually) first 1100px of a webpage) as inline CSS placed in the head element. None of these techniques are pretty, and they make your job as a developer hard. There are some positives, though; Google likes faster websites meaning yours will rank higher, and faster load times = better user experience.
 
 This should also be used in conjunction with other methods to increase load time such as: Optimizing images, Lazy loading images, minifying code, enabling Gzip, asynchronously / defer javascript, remove un-needed code. 
 
