@@ -139,7 +139,26 @@ Then you can either:
 
 For an even better SCSS method and information visit [Ben Edwards' CSS-TRICKS article](https://css-tricks.com/authoring-critical-fold-css/)
 
-### Automated: Google (Hard)
+
+### Automated: Penthouse & Critical (Hard)
+
+####Critical
+
+> Critical extracts & inlines critical-path (above-the-fold) CSS from HTML
+
+See the below link for the difference between Critical and Penthouse:
+
+[Critical](https://github.com/addyosmani/critical)
+
+####Penthouse
+
+>Penthouse is a tool generating critical path CSS for your web pages and web apps in order to speed up page rendering.
+Supply the tool with your site's full CSS, and the page you want to create the critical CSS for, and it will return all the CSS needed to render the above the fold content of the page.
+
+- [Penthouse](https://github.com/pocketjoso/penthouse)
+
+
+### Automated: Google server side (Hard)
 
 Install modules directly to your server, they support Apache and Nginx.
 
@@ -151,12 +170,8 @@ Install modules directly to your server, they support Apache and Nginx.
 
 - [Prioritize Critical CSS](https://developers.google.com/speed/pagespeed/module/filter-prioritize-critical-css)
 
-### Automated: Penthouse (Hard)
 
->Penthouse is a tool generating critical path CSS for your web pages and web apps in order to speed up page rendering.
-Supply the tool with your site's full CSS, and the page you want to create the critical CSS for, and it will return all the CSS needed to render the above the fold content of the page.
 
-- [Penthouse](https://github.com/pocketjoso/penthouse)
 
 ### Other great links
 - [Critical rendering path](https://varvy.com/pagespeed/critical-render-path.html)
