@@ -2,9 +2,17 @@
 
 This is the ideal code to go inside the <head> element, for a basic site. For larger sites where you need more options, I'd recommend diving into [Josh Bucheas' Github page](https://github.com/joshbuchea/HEAD). It has a lot more options that this, as this is only my recommended usage and provides information for what each tag does.
 
+## Table of contents
 
-
-
+- [Declaring character encoding](#declaring-character-encoding)
+- [Render the page as IE Edge](#render-the-page-as-ie-edge)
+- [Make site responsive](#make-site-responsive)
+- [Title & Description](#title--description)
+- [Robots Meta](#robots-meta)
+- [Facebook / OpenGraph and Twitter Cards](#facebook--opengraph-and-twitter-cards)
+- [Avoid render blocking CSS](#avoid-render-blocking-css)
+- [Favicons](#favicons)
+- [HTML5 Shim](#html5-shim)
 
 ## Declaring character encoding
 The charset attribute specifies the character encoding for the HTML document.
