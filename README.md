@@ -63,6 +63,7 @@ I'd recommend using a robots.txt file, as then you don't have to include the met
 ```
 - [Robots meta tag specifications](https://developers.google.com/webmasters/control-crawl-index/docs/robots_meta_tag)
 
+
 ## Facebook / OpenGraph and Twitter Cards
 
 ###OpenGraph 
@@ -110,7 +111,56 @@ Twitter fallbacks these tags:
 
 
 
+## Avoid render blocking CSS
 
+When a webpage comes across an external stylesheet, it must load these resources before rendering any content to the page.Google advises that you put critical CSS (all CSS that is in the (usually) first 1100px of a webpage) as inline CSS placed in the head element. None of these techniques are pretty, and they make your job as a developer hard. There are some positives, though; Google likes faster websites meaning yours will rank higher, and faster load times = better user experience.
+
+This should also be used in conjunction with other methods to increase load time such as: Optimizing images, Lazy loading images, minifying code, enabling Gzip, asynchronously / defer javascript, remove un-needed code. 
+
+Hopefully, with the new HTTP/2 protocol, we can start moving away from these methods so keep an eye out!
+
+### Manually (Easy)
+You can do this manually, and if you're not familiar with npm, Gulp or Grunt then this is the route you should take.
+First you find all you need to find your CSS that is important and should be loaded first. You can use this tool to make it easier for you:
+
+[https://jonassebastianohlsson.com/criticalpathcssgenerator/](Critical Path CSS Generator)
+
+Put the code that was generated in your head tag.
+```HTML
+<style>
+ /* Put critical CSS here */
+</style>
+````
+Then you can either:
+1) Then place your stylesheets at the bottom of your page, before the closing </body> tag.
+2) Load them asynchronously using [loadCSS](https://github.com/filamentgroup/loadCSS) before the closing body tag. (Recommended)
+
+For an even better SCSS method and information visit [Ben Edwards' CSS-TRICKS article](https://css-tricks.com/authoring-critical-fold-css/)
+
+### Automated: Google (Hard)
+
+Install modules directly to your server, they support Apache and Nginx.
+
+>This rewriter improves page render times by identifying CSS rules needed to render the page, inlining those critical rules and deferring the load of the full CSS resources.
+
+- [Install Pagespeed](https://developers.google.com/speed/pagespeed/module/)
+
+- [PageSpeed Configuration](https://developers.google.com/speed/pagespeed/module/configuration)
+
+- [Prioritize Critical CSS](https://developers.google.com/speed/pagespeed/module/filter-prioritize-critical-css)
+
+### Automated: Penthouse (Hard)
+
+>Penthouse is a tool generating critical path CSS for your web pages and web apps in order to speed up page rendering.
+Supply the tool with your site's full CSS, and the page you want to create the critical CSS for, and it will return all the CSS needed to render the above the fold content of the page.
+
+- [Penthouse](https://github.com/pocketjoso/penthouse)
+
+### Other great links
+- [Critical rendering path](https://varvy.com/pagespeed/critical-render-path.html)
+- [Optimize CSS delivery](https://varvy.com/pagespeed/optimize-css-delivery.html)
+- [Eliminate render blocking css](https://varvy.com/pagespeed/render-blocking-css.html)
+- [Render blocking Javascripts](https://varvy.com/pagespeed/render-blocking.html)
 
 #Favicons
 
