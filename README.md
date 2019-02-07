@@ -150,7 +150,7 @@ For an even better SCSS method and information visit [Ben Edwards' CSS-TRICKS ar
 
 ### Automated: Penthouse & Critical (Hard)
 
-####Critical
+#### Critical
 
 > Critical extracts & inlines critical-path (above-the-fold) CSS from HTML
 
@@ -158,7 +158,7 @@ See the below link for the difference between Critical and Penthouse:
 
 [Critical](https://github.com/addyosmani/critical)
 
-####Penthouse
+#### Penthouse
 
 >Penthouse is a tool generating critical path CSS for your web pages and web apps in order to speed up page rendering.
 Supply the tool with your site's full CSS, and the page you want to create the critical CSS for, and it will return all the CSS needed to render the above the fold content of the page.
