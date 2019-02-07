@@ -131,7 +131,7 @@ Hopefully, with the new HTTP/2 protocol, we can start moving away from these met
 You can do this manually, and if you're not familiar with npm, Gulp or Grunt then this is the route you should take.
 First you find all you need to find your CSS that is important and should be loaded first. You can use this tool to make it easier for you:
 
-[https://jonassebastianohlsson.com/criticalpathcssgenerator/](Critical Path CSS Generator)
+[Critical Path CSS Generator](https://jonassebastianohlsson.com/criticalpathcssgenerator)
 
 Put the code that was generated in your head tag.
 ```HTML
@@ -141,7 +141,7 @@ Put the code that was generated in your head tag.
 ````
 Then you can either:
 
-1. Then place your stylesheets at the bottom of your page, before the closing </body> tag.
+1. Then place your stylesheets at the bottom of your page, before the closing `</body>` tag.
 
 2. Load them asynchronously using [loadCSS](https://github.com/filamentgroup/loadCSS) before the closing body tag. (Recommended)
 
@@ -152,19 +152,12 @@ For an even better SCSS method and information visit [Ben Edwards' CSS-TRICKS ar
 
 #### Critical
 
-> Critical extracts & inlines critical-path (above-the-fold) CSS from HTML
-
-See the below link for the difference between Critical and Penthouse:
-
-[Critical](https://github.com/addyosmani/critical)
+[Critical](https://github.com/addyosmani/critical) extracts & inlines critical-path (above-the-fold) CSS from HTML. See the below link for the difference between Critical and Penthouse:
 
 #### Penthouse
 
->Penthouse is a tool generating critical path CSS for your web pages and web apps in order to speed up page rendering.
+- [Penthouse](https://github.com/pocketjoso/penthouse) is a tool generating critical path CSS for your web pages and web apps in order to speed up page rendering.
 Supply the tool with your site's full CSS, and the page you want to create the critical CSS for, and it will return all the CSS needed to render the above the fold content of the page.
-
-- [Penthouse](https://github.com/pocketjoso/penthouse)
-
 
 ### Automated: Google server side (Hard)
 
