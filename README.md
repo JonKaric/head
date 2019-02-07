@@ -187,13 +187,9 @@ Install modules directly to your server, they support Apache and Nginx.
 - [Eliminate render blocking css](https://varvy.com/pagespeed/render-blocking-css.html)
 - [Render blocking Javascripts](https://varvy.com/pagespeed/render-blocking.html)
 
-#Favicons
+# Favicons
+I recommend using [Real Favicon Generator](https://realfavicongenerator.net/) to generate your favicons. It generates around 5 lines of code whilst still maintaining full browser support. They include thorough settings, and you can even set a dedicated image for each device. For standard support, see below. 
 
-**I strongly recommend using this website to generate your favicons instead of the below code. They generate around 5 lines of code while still maintaining full browser support. Microsoft, Android, iOS, even the new Safari pinned tabs. They also include ridiculously thorough settings, and you can even set a dedicated image for each device - check it out.**
-
-[Real Favicon Generator](https://realfavicongenerator.net/)
-
----
 
 ```html
 <!-- For IE 10 and below -->  
